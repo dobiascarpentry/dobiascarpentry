@@ -1,4 +1,236 @@
-<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport"content="width=device-width, initial-scale=1.0"> <title>Dobias Finish Carpentry Inc. | Premium Craftsmanship</title> <style> :root { --primary: #2c3e50; /* Slate / Charcoal Woodworking Vibe */ --secondary: #d35400; /* Warm Carpentry Amber / Orange Accent */ --text-main: #2c3e50; /* Dark Slate */ --text-light: #7f8c8d; /* Muted Gray */ --bg-light: #f8f9fa; /* Warm Off-White Background */ } * { margin: 0; padding: 0; box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; } body { color: var(--text-main); line-height: 1.6; background-color: #ffffff; } header { background: #ffffff; padding: 1.5rem 10%; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 4px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 100; } .logo { font-size: 1.3rem; font-weight: 700; color: var(--primary); text-transform: uppercase; letter-spacing: 1px; } .cta-btn { background: var(--primary); color: #ffffff; padding: 0.6rem 1.2rem; border-radius: 4px; text-decoration: none; font-weight: 600; transition: background 0.3s ease; } .cta-btn:hover { background: var(--secondary); } .hero { padding: 6rem 10%; text-align: center; background: linear-gradient(135deg, #fdfbf7 0%, #f5f5f5 100%); border-bottom: 1px solid #e5e7eb; } .hero h1 { font-size: 2.8rem; color: var(--primary); margin-bottom: 1rem; } .hero p { font-size: 1.2rem; color: var(--text-light); max-width: 600px; margin: 0 auto 2rem; } .services { padding: 4rem 10%; background: #ffffff; } .services h2 { text-align: center; color: var(--primary); margin-bottom: 3rem; font-size: 2rem; } .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; } .card { padding: 2rem; background: var(--bg-light); border-radius: 8px; border: 1px solid #e5e7eb; transition: transform 0.3s ease; } .card:hover { transform: translateY(-5px); border-color: var(--secondary); } .card h3 { color: var(--primary); margin-bottom: 0.5rem; border-bottom: 2px solid var(--secondary); display: inline-block; padding-bottom: 4px; margin-bottom: 1rem; } .contact { padding: 5rem 10%; background: var(--bg-light); text-align: center; } .contact h2 { color: var(--primary); margin-bottom: 1rem; font-size: 2rem; } .contact p { color: var(--text-light); margin-bottom: 2.5rem; } .contact-info { display: flex; flex-direction: column; gap: 1.5rem; max-width: 400px; margin: 0 auto; background: #ffffff; padding: 2.5rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border-top: 4px solid var(--primary); } .contact-item { text-decoration: none; color: var(--text-main); font-weight: 500; display: flex; align-items: center; justify-content: center; gap: 0.5rem; } .contact-item:hover { color: var(--secondary); } footer { background: var(--primary); color: #ffffff; text-align: center; padding: 2rem; font-size: 0.9rem; } @media (max-width: 768px) { .hero h1 { font-size: 2rem; } header { padding: 1rem 5%; flex-direction: column; gap: 1rem; text-align: center; } .hero, .services, .contact { padding: 3rem 5%; } } </style> </head> <body> <header> <div class="logo">Dobias Finish Carpentry Inc.</div> <a href="#contact" class="cta-btn">Request a Quote</a> </header> <section class="hero"> <h1>Premium Woodworking & Detail Finishing</h1> <p>Bringing precision, elegance, and expert craftsmanship to custom trim, molding, and architectural millwork.</p> <a href="#contact" class="cta-btn">Discuss Your Project</a> </section> <sectionclass="services"> <h2>Our Craftsmanship Specialty</h2> <div class="grid"> <div class="card"> <h3>Trim & Molding</h3> <p>Flawless installation of baseboards, crown molding, casing, and custom chair rails to frame your space perfectly.</p> </div> <div class="card"> <h3>Doors & Windows</h3> <p>Expert fitting and installation of interior and exterior doors, detailed window framing, and premium hardware setup.</p> </div> <div class="card"> <h3>Custom Accents</h3> <p>High-end architectural details including wainscoting, shiplap, accent walls, and tailored built-in components.</p> </div> </div> </section> <section id="contact"class="contact"> <h2>Let's Build Something Together</h2> <p>Ready to upgrade your home or commercial space? Contact us today to secure an estimate.</p> <div class="contact-info"> <a href="mailto:info@dobiascarpentry.com" class="contact-item">
-    📧 info@dobiascarpentry.com
-</a>
- <div class="contact-item" style="color: var(--text-light);"> 📍 South Lake Tahoe, California </div> </div> </section> <footer> <p>&copy; 2026 Dobias Finish Carpentry Inc. All rights reserved.</p> </footer> </body> </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dobias Finish Carpentry Inc. | Premium Craftsmanship</title>
+    <style>
+        :root {
+            --primary: #2c3e50; /* Slate / Charcoal Woodworking Vibe */
+            --secondary: #d35400; /* Warm Carpentry Amber / Orange Accent */
+            --text-main: #2c3e50; /* Dark Slate */
+            --text-light: #7f8c8d; /* Muted Gray */
+            --bg-light: #f8f9fa; /* Warm Off-White Background */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            color: var(--text-main);
+            line-height: 1.6;
+            background-color: #ffffff;
+        }
+
+        header {
+            background: #ffffff;
+            padding: 1.5rem 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .cta-btn {
+            background: var(--primary);
+            color: #ffffff;
+            padding: 0.6rem 1.2rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.3s ease;
+        }
+
+        .cta-btn:hover {
+            background: var(--secondary);
+        }
+
+        .hero {
+            padding: 6rem 10%;
+            text-align: center;
+            background: linear-gradient(135deg, #fdfbf7 0%, #f5f5f5 100%);
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-light);
+            max-width: 600px;
+            margin: 0 auto 2rem;
+        }
+
+        .services {
+            padding: 4rem 10%;
+            background: #ffffff;
+        }
+
+        .services h2 {
+            text-align: center;
+            color: var(--primary);
+            margin-bottom: 3rem;
+            font-size: 2rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            padding: 2rem;
+            background: var(--bg-light);
+            border-radius: 8px;
+            border: 1px solid #e5e7eb;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--secondary);
+        }
+
+        .card h3 {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            border-bottom: 2px solid var(--secondary);
+            display: inline-block;
+            padding-bottom: 4px;
+            margin-bottom: 1rem;
+        }
+
+        .contact {
+            padding: 5rem 10%;
+            background: var(--bg-light);
+            text-align: center;
+        }
+
+        .contact h2 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+            font-size: 2rem;
+        }
+
+        .contact p {
+            color: var(--text-light);
+            margin-bottom: 2.5rem;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            max-width: 400px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-top: 4px solid var(--primary);
+        }
+
+        .contact-item {
+            text-decoration: none;
+            color: var(--text-main);
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        .contact-item:hover {
+            color: var(--secondary);
+        }
+
+        footer {
+            background: var(--primary);
+            color: #ffffff;
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            header { padding: 1rem 5%; flex-direction: column; gap: 1rem; text-align: center; }
+            .hero, .services, .contact { padding: 3rem 5%; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Dobias Finish Carpentry Inc.</div>
+        <a href="#contact" class="cta-btn">Request a Quote</a>
+    </header>
+
+    <section class="hero">
+        <h1>Premium Woodworking & Detail Finishing</h1>
+        <p>Bringing precision, elegance, and expert craftsmanship to custom trim, molding, and fine cabinetry solutions.</p>
+        <a href="#contact" class="cta-btn">Discuss Your Project</a>
+    </section>
+
+    <section class="services">
+        <h2>Our Craftsmanship Specialty</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Cabinet Installations</h3>
+                <p>Precise installation of custom kitchen, bathroom, and storage cabinetry. Perfectly leveled, tightly fitted, and built to last.</p>
+            </div>
+            <div class="card">
+                <h3>Cabinet Refacing</h3>
+                <p>Give your space a premium look without a complete tear-out. We install new doors, drawer fronts, and flawless veneers.</p>
+            </div>
+            <div class="card">
+                <h3>Trim & Molding</h3>
+                <p>Flawless installation of baseboards, crown molding, casing, and custom chair rails to frame your space perfectly.</p>
+            </div>
+            <div class="card">
+                <h3>Custom Accents</h3>
+                <p>High-end architectural details including wainscoting, shiplap, accent walls, and tailored built-in components.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Let's Build Something Together</h2>
+        <p>Ready to upgrade your home or commercial space? Contact us today to secure an estimate.</p>
+        
+        <div class="contact-info">
+            <a href="mailto:info@dobiascarpentry.com" class="contact-item">
+                📧 info@dobiascarpentry.com
+            </a>
+            <div class="contact-item" style="color: var(--text-light);">
+                📍 South Lake Tahoe, California
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Dobias Finish Carpentry Inc. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
